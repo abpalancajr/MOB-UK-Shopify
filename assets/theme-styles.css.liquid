@@ -1615,22 +1615,31 @@ table.wishlist-product .a-center { text-align: center; }
 	text-transform: uppercase;
   	position: relative;
   	letter-spacing: 5px;
+  	font-family: 'ITCAvantGardeProBk';
 }
 
-.drop-down-menu .drop-down-menu-title:after{
+/* .drop-down-menu .drop-down-menu-title:after{
 	content: " ";
   	position: absolute;
-  	bottom: -35px;
-  	border: 2px solid black;
-  	width: 30px;
-}
+  	bottom: -25px;
+  	display: table-cell;
+  	border: 1px dashed #e9e8e8;
+  	width: 100%;
+} */
 .drop-down-menu .drop-down-menu-title p{
- 	font-size: 18px; 
-  	margin-bottom: 50px;
+	font-family: 'ITCAvantGardeProBk' !important;
+ 	font-size: 34px;
+ 	display: table-cell;
+ 	padding-bottom: 20px;
+ 	border-bottom: 1px dashed #dddddd;	
+  	margin-bottom: 30px;
 }
 
 .drop-down-menu .drop-down-menu-title h1{
  	font-size: 24px; 
+  	margin-bottom: 12px;
+  	font-style: italic;
+  	font-family: BodoniFLF-BoldItalic;
 }
 
 .inner li{
@@ -1646,16 +1655,59 @@ table.wishlist-product .a-center { text-align: center; }
 }
 
 .drop-down-menu .megamenu-image {
- 	margin-top: -80px; 
+ 	margin-top: -92px; 
 }
 
-.drop-down-menu .megamenu-image img:not(:first-child){
-	margin-left: 50px;
+.drop-down-menu .megamenu-image img{
+	padding: 0 25px;
+  	width: 283px;
+  	height: 241px;
+}
+
+.drop-down-menu .megamenu-image img{
+	border-left: 1px solid #ebebeb;
 }
 
 header.minetan .header-bottom .nav-bar>.container .site-nav-dropdown .style_3 .inner a span:hover{
 	color: #67bbb9; 
 }
+
+.inner li{
+ 	line-height: 0px; 
+  	height: 37px;
+}
+
+.inner li a{
+ 	margin: 0px !important; 
+  	line-height: 50px !important;
+}
+
+.inner li a span{
+ 	font-family: 'ITCAvantGardeProBk' !important;
+  	font-size: 12px !important;
+  	font-weight: lighter !important;
+  	text-transform: initial !important;
+}
+
+.inner li a span:hover{
+ 	color: #67bbb9; 
+}
+
+/* .container.shop-professional-menu.style_1{
+	max-width: 1430px;
+  	width: 100%;
+} */
+
+.container.shop-menu.style_3,
+div.container.shop-professional-menu.style_1{
+ 	max-width: 1080px;
+  	padding: 0px;
+}
+
+/*.drop-down-menu .drop-down-menu-title{
+ 	font-family: 'AvantGardeGothicITCDm';
+}*/
+
 
 @media (max-width: 740px){
  	.drop-down-menu .megamenu-image {

@@ -17,18 +17,20 @@
         <span class="shop"> ALL </span>
       </a>
     </div> -->
+
 	<div class="drop-down-menu">
       <div class="drop-down-menu-title">
         <h1>{{ link.title }}</h1>
         <p>{{ linklists[link_handle].title }}</p>
       </div>
       <div style="clear: both; float: none"></div>
-      <ul class="inner" style="height: 210px; column-width: 100px; column-count: auto; column-fill: auto; width: auto; border; none;">
+      <ul class="inner" style="height: 250px; column-width: 150px; column-count: auto; column-fill: auto; width: auto; border; none;">
       {% for l in linklists[link_handle].links %}
         <li>
           <a id="{{ l.handle }}" href="{{ l.url }}"{% if l.active %} class="current"{% endif %}>
             <span>{{ l.title }}</span></a>
         </li>
+
       {% comment %}
       <div class="inner">
         <!-- Menu level 2 -->
@@ -102,4 +104,17 @@
     </div>
   </div>
   {% endunless %} -->
+
 </div>
+
+<script>
+  jQuery(document).ready(function($){
+    $('li.dropdown.mega-menu').hover(function(){
+      var dropDownHeight = $('.wrapper-container .site-nav li.mega-menu:hover .site-nav-dropdown').outerHeight();
+      $('.minetan-main.main-content.container').css({"padding-top": dropDownHeight});
+    }, function(){
+      $('.minetan-main.main-content.container').css({"padding-top": 0});
+    }); 
+  }); 
+
+</script>
