@@ -6,9 +6,9 @@
 
 {% if template contains 'collection' %}
 <div class="row">  
-  <div class="block-row col-xs-12 center">    
+  <div class="block-row col-xs-12 center collection-image">    
     {% if collection.image %}
-		<img src="{{ collection.image.src | collection_img_url: 'original' }}" alt="{{ collection.image.alt }}" />
+		<img src="{{ collection.image.src | collection_img_url: 'master' }}" alt="{{ collection.image.alt }}" />
 	{% endif %}
   </div>
 </div>
